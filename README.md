@@ -7,7 +7,7 @@
 <h1>🐳 CampusBooking Lite – Gestión de Espacios y Reservas </h1>
 
 > ## 👩🏻‍💻**Kata**
-> **Objetivo:** Crear un sistema interno minimalista para administrar espacios académicos y gestionar reservas de forma rápida y eficiente.*
+> **Objetivo:** Crear un sistema interno minimalista para administrar espacios académicos y gestionar reservas de forma rápida y eficiente.
 
 ![Status](https://img.shields.io/badge/status-active-success)
 ![Laravel](https://img.shields.io/badge/Laravel-10-red)
