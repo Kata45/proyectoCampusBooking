@@ -135,16 +135,6 @@ php artisan serve
 📍 Ahora puedes entrar a:
 👉 [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
----
-
-## 📸 **Capturas (opcional)**
-
-> Agrega imágenes reales del proyecto aquí
-
-```
-![Listado de Espacios](URL_DE_LA_IMAGEN)
-![Formulario de Reserva](URL_DE_LA_IMAGEN)
-```
 
 ---
 
@@ -159,3 +149,7 @@ php artisan serve
 | Inicio   | `/`         | Página inicial |
 
 </div>
+
+---
+##### © **2025** Creado por *Kata* — Todos los derechos reservados.
+---
