@@ -1,59 +1,161 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+![imagen](https://i.pinimg.com/1200x/55/46/e5/5546e5d850808d0f515b8bd6243dfe4f.jpg)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+<div align="center">
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<h1>🐳 CampusBooking Lite – Gestión de Espacios y Reservas </h1>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+> ## 👩🏻‍💻**Kata**
+> **Objetivo:** Crear un sistema interno minimalista para administrar espacios académicos y gestionar reservas de forma rápida y eficiente.*
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![Status](https://img.shields.io/badge/status-active-success)
+![Laravel](https://img.shields.io/badge/Laravel-10-red)
+![PHP](https://img.shields.io/badge/PHP-8%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-## Learning Laravel
+</div>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 📘 **Descripción del Proyecto**
 
-## Laravel Sponsors
+**CampusBooking Lite** es una aplicación interna construida en **Laravel 10** que permite gestionar:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+* 🏫 **Espacios** (aulas, salas, laboratorios)
+* 📅 **Reservas** asociadas a esos espacios
 
-### Premium Partners
+Es un sistema CRUD simple — sin autenticación ni reglas complejas — pensado para uso administrativo dentro de una sede.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## 🚀 **Características principales**
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### ✔️ CRUD de Espacios
 
-## Code of Conduct
+* Crear, editar, listar y eliminar.
+* Validación de campos (nombre, tipo, capacidad, ubicación).
+* Paginación de **10 registros por página**.
+* Mensajes flash para operaciones exitosas.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### ✔️ CRUD de Reservas
 
-## Security Vulnerabilities
+* Crear reservas asociadas a un espacio mediante un `<select>`.
+* Validaciones mínimas: solicitante, fecha, horas, espacio asignado.
+* Relación **1–N**: un Espacio → muchas Reservas.
+* Muestra el nombre del espacio en la tabla.
+* Paginación y alertas flash.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 🏗️ **Tecnologías utilizadas**
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<div align="center">
+
+| Tecnología           | Versión |
+| -------------------- | ------- |
+| PHP                  | 8+      |
+| Laravel              | 10+     |
+| Blade Templates      | ✔️      |
+| MySQL / MariaDB      | ✔️      |
+| Bootstrap (opcional) | ✔️      |
+
+</div>
+
+---
+
+## 📁 **Estructura general de carpetas**
+
+```
+CampusBookingLite/
+│── app/
+│   ├── Http/Controllers/
+│   └── Models/
+│── database/
+│   ├── migrations/
+│── resources/
+│   └── views/
+│── routes/
+│   └── web.php
+│── public/
+└── README.md
+```
+
+---
+
+## ⚙️ **Instalación y configuración**
+
+### 1️⃣ Clonar el repositorio
+
+```bash
+git clone https://github.com/TU-USUARIO/TU-REPO.git
+cd TU-REPO
+```
+
+### 2️⃣ Instalar dependencias
+
+```bash
+composer install
+```
+
+### 3️⃣ Crear el archivo .env
+
+```bash
+cp .env.example .env
+```
+
+### 4️⃣ Generar key del proyecto
+
+```bash
+php artisan key:generate
+```
+
+### 5️⃣ Configurar base de datos
+
+Edita en `.env`:
+
+```
+DB_DATABASE=campus
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 6️⃣ Ejecutar migraciones
+
+```bash
+php artisan migrate
+```
+
+### 7️⃣ Iniciar servidor
+
+```bash
+php artisan serve
+```
+
+📍 Ahora puedes entrar a:
+👉 [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+---
+
+## 📸 **Capturas (opcional)**
+
+> Agrega imágenes reales del proyecto aquí
+
+```
+![Listado de Espacios](URL_DE_LA_IMAGEN)
+![Formulario de Reserva](URL_DE_LA_IMAGEN)
+```
+
+---
+
+## 🛠️ **Rutas principales**
+
+<div align="center">
+
+| Recurso  | Ruta        | Acción         |
+| -------- | ----------- | -------------- |
+| Espacios | `/espacios` | CRUD completo  |
+| Reservas | `/reservas` | CRUD completo  |
+| Inicio   | `/`         | Página inicial |
+
+</div>
